@@ -1,4 +1,4 @@
-namespace AutoLotModel
+namespace AutoLot
 {
     using System;
     using System.Collections.Generic;
@@ -6,23 +6,23 @@ namespace AutoLotModel
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("Inventory")]
-    public partial class Inventory
+    [Table("Customer")]
+    public partial class Customer
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Inventory()
+        public Customer()
         {
             Orders = new HashSet<Order>();
         }
 
         [Key]
-        public int CarId { get; set; }
+        public int CustId { get; set; }
 
         [StringLength(50)]
-        public string Make { get; set; }
+        public string FirstName { get; set; }
 
         [StringLength(50)]
-        public string Color { get; set; }
+        public string LastName { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Orders { get; set; }

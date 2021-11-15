@@ -1,4 +1,4 @@
-namespace AutoLotModel
+namespace AutoLot
 {
     using System;
     using System.Collections.Generic;

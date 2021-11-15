@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
 
-namespace AutoLotModel
+namespace AutoLot
 {
     public partial class AutoLotEntitiesModel : DbContext
     {
